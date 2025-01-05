@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sticky Header</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="MahimVi.css">
+  </head>
+  <body>
+
+    <div class="container arif">
+
+      <div class="adds">
+        <p>
+          এখানে বিভিন্ন অ্যাড শো করানো যেতে পারে!
+        </p>
+      </div>
+    </div>
+    <!-- Sticky Header -->
+    <header class="sticky-header navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- Three Dot Menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">LOGO</a>
+
+        <!-- Search Bar -->
+        <form
+          class="d-flex align-items-center search-bar me-auto ms-2 d-lg-none"
+        >
+          <input
+            id="search-input"
+            type="text"
+            class="form-control"
+            placeholder="Search..."
+            oninput="searchPage()"
+          />
+        </form>
+
+        <!-- Language and Login Buttons -->
+        <div class="d-flex align-items-center d-lg-none">
+          <select
+            class="form-select me-2"
+            style="width: auto"
+            onchange="changeLanguage(this.value)"
+          >
+            <option value="en">English</option>
+            <option value="bn">বাংলা</option>
+          </select>
+          <button class="btn btn-custom">Login</button>
+        </div>
+
+        <!-- Full Navbar for Larger Screens -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <form class="d-flex align-items-center search-bar me-3">
+            <input
+              id="search-input-lg"
+              type="text"
+              class="form-control me-2"
+              placeholder="Search..."
+              oninput="searchPage()"
+            />
+          </form>
+
+
+
+          <select
+            class="form-select me-2"
+            style="width: auto" border-radius:29px;
+            onchange="changeLanguage(this.value)"
+          >
+            <option value="en" class="">English</option>
+            <option value="bn">বাংলা</option>
+          </select>
+          <button class="btn btn-custom">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- vedio section start -->
+
+    <div class="">
+      <section class="video-section">
+        <video autoplay muted loop class="background-video">
+          <source src="sitevedio.mp4" type="video/mp4" />
+          আপনার ব্রাউজার ভিডিও প্লে করতে পারে না।
+        </video>
+        <div class="overlay"></div>
+        <div class="text-content">
+          <h1>আমাদের শিক্ষা প্রতিষ্ঠানে আপনাকে স্বাগতম!</h1>
+          <p>সন্তান আপনার! তাকে গড়ে তোলার দায়িত্ব আমাদের!</p>
+        </div>
+      </section>
+    </div>
+    <!-- vedio section end -->
+
+    
+<!-- Scroll reveal animation start -->
+
+
+    <div class="container text-center mt-5">
+      <!-- Heading Section -->
+      <h2 class="fw-bold reveal" data-delay="0.2">Welcome To Our School.</h2>
+      <hr class="mx-auto reveal" style="width: 50px; height: 2px;
+       background-color: red; border: none;"
+       data-delay="0.4">
+  
+      <!-- Description Section -->
+      <p class="mt-3 reveal" data-delay="0.6">
+        At Singapore American School, students are encouraged to think outside the box rather than fitting a predetermined mold. 
+        Our experienced and passionate teachers engage students by personalizing learning pathways and offering exciting and 
+        challenging courses at all levels. A fulfilling mix of academic and co-curricular activities helps our Eagles find their true selves 
+        and develop the skills and interests to pursue their dreams.
+      </p>
+  
+      <!-- Button Section -->
+      <div class="d-flex justify-content-center gap-3 mt-4 reveal" data-delay="0.8">
+        <button class="btn btn-primary btn-custom">ভর্তির বিষয়ে তথ্য</button>
+        <button class="btn btn-dark btn-custom">একাডেমিক</button>
+        <button class="btn btn-dang btn-custom">আবেদন
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll reveal animation end  -->
+
+
+<!-- Why will you send to us  -->
+
+<div class="container text-center why mt-5">
+
+  <!-- Heading Section -->
+  <h2 class="fw-bold reveals" data-delay="0.2">আপনার চিন্তার বাইরে আমাদের যত্ন!!</h2>
+  <hr class="mx-auto reveals" style="width: 50px; height: 2px;
+   background-color: red; border: none;"
+   data-delay="0.4">
+   
+</div>
+
+
+
+<!-- Why will you send to us  -->
+
+
+<div class="container adnan reveal mt-5">
+  <!-- Carousel Title -->
+  <h2 class="carousel-title" style="color:blueviolet; background: white;">আপনি যে কারণে সন্তানকে আমাদের প্রতিষ্ঠানে পাঠাবেন🥰!!</h2>
+  <!-- <p class="carousel-subtitle">We don’t just claim your kids will get a top-notch education, we prove it.</p> -->
+  
+  <!-- Carousel -->
+  <div id="studentCarousel" class="carousel slide" data-bs-ride="carousel" style="display: flex;">
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-fle justify-content-center">
+
+          <h2 class="carousel-title">১. উন্নত পাঠদান পদ্ধতি:
+          </h2>
+
+          <p class="carousel-subtitle" style="color: white;">আমাদের শিক্ষাপ্রতিষ্ঠান বিশ্বমানের পাঠদান পদ্ধতি অনুসরণ করে
+           </p>
+
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="d-fle justify-content-center">
+
+          <h2 class="carousel-title">২. যোগ্য ও অভিজ্ঞ শিক্ষক:
+          </h2>
+
+          <p class="carousel-subtitle" style="color: white;">আমাদের প্রতিষ্ঠানের শিক্ষকগণ অভিজ্ঞ, দক্ষ এবং শিক্ষার্থীদের প্রতি নিবেদিত। 
+            .</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-fle justify-content-center">
+
+          <h2 class="carousel-title">৩. আধুনিক সুযোগ-সুবিধা:
+          </h2>
+
+          <p class="carousel-subtitle" style="color: white;">আমাদের প্রতিষ্ঠানে আধুনিক প্রযুক্তি-সমৃদ্ধ ক্লাসরুম, লাইব্রেরি, ল্যাবরেটরি এবং শিক্ষার জন্য প্রয়োজনীয় অন্যান্য সুযোগ-সুবিধা রয়েছে.</p>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="d-fle justify-content-center">
+
+          <h2 class="carousel-title">৪. নৈতিক শিক্ষা ও মানসম্পন্ন পরিবেশ:
+            
+          </h2>
+
+          <p class="carousel-subtitle">
+            আমরা শুধু শিক্ষার মান উন্নত করি না, বরং শিক্ষার্থীদের নৈতিকতা, শৃঙ্খলা এবং সামাজিক মূল্যবোধে উদ্বুদ্ধ করি।
+            .</p>            
+        </div>
+
+
+        
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#studentCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidde">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#studentCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidde">Next</span>
+    </button>
+  </div>
+
+  <!-- Pagination -->
+  <nav class="mt-3">
+    <ul class="pagination pagination-indicators justify-content-center">
+      <li class="page-item active">
+        <button class="page-link" data-bs-target="#studentCarousel" data-bs-slide-to="0">1</button>
+      </li>
+      <li class="page-item">
+        <button class="page-link" data-bs-target="#studentCarousel" data-bs-slide-to="1">2</button>
+      </li>
+      <li class="page-item">
+        <button class="page-link" data-bs-target="#studentCarousel" data-bs-slide-to="2">3</button>
+      </li>
+      <li class="page-item">
+        <button class="page-link" data-bs-target="#studentCarousel" data-bs-slide-to="2">4</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<!-- Cards design start -->
+<div class="container my-5">
+  <div class="row g-4 reveal">
+    <h1 style="font-weight: bold; color:dimgrey;">Our Intelligent Teachers</h1>
+    <!-- Card 1 -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="position-relative">
+          <img src="gst1.jpg" class="card-img-top"  style="height: 300px; width: 90%; object-fit: cover;">
+          <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            <h5>Abidul Islam Abid</h5>
+            
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h2 class="card-title">Abidul</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aut.</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="position-relative">
+          <img src="pro2.jpg" class="card-img-top" alt="Person 2" style="height: 300px; width: 90%; object-fit: cover;">
+          <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            <h5>Jane Smith</h5>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h2 class="card-title">Jane Smith</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aperiam.</p>
+          <a href="#" class="btn btn-primary">About Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="position-relative">
+          <img src="pro2.jpg" class="card-img-top" alt="Person 3" style="height: 300px; width: 90%; object-fit: cover;">
+          <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            <h5>Michael Brown</h5>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h2 class="card-title">Michael Brown</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, placeat.</p>
+          <a href="#" class="btn btn-primary">About Me</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Card 5 -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="position-relative">
+          <img src="pro2.jpg" class="card-img-top" alt="Person 5" style="height: 300px; width: 90%; object-fit: cover;">
+          <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            <h5>Emily Davis</h5>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h2 class="card-title">Emily Davis</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, laudantium.</p>
+          <a href="#" class="btn btn-primary">About Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Academic section  start -->
+
+<div class="container mt-5 reveal">
+<h1>Our Academic Section</h1>
+<hr style="width: 350px; border: 2px solid rgb(28, 29, 26);">
+  <div class="row g-4 reveal">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card-overlay">
+        <img src="ac1.jpg" alt="Image 1" style="height: 300px;">
+        <div class="overlay">
+          <h1>Child One </h1>
+          <h5>Learn More</h5>
+          <a href="#" class="btn-customs">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card-overlay">
+        <img src="ac2.jpg" alt="Image 2" style="height: 300px;">
+        <div class="overlay">
+          <h1>Class One</h1>
+          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+          <a href="#" class="btn-customs">View Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card-overlay">
+        <img src="ac3.jpg" style="height: 300px;" alt="Image 2">
+        <div class="overlay">
+          <h1>Class Two</h1>
+          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+          <a href="#" class="btn-customs">View Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card-overlay">
+        <img src="ac4.jpg" style="height: 300px;" alt="Image 2">
+        <div class="overlay">
+          <h1>Class Three</h1>
+          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+          <a href="#" class="btn-customs">View Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card-overlay">
+        <img src="ac1.jpg" style="height: 300px;" alt="Image 2">
+        <div class="overlay">
+          <h1>Class Four</h1>
+          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+          <a href="#" class="btn-customs">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card-overlay">
+        <img src="ac2.jpg" style="height: 300px;" alt="Image 3">
+        <div class="overlay">
+          <h1>Class Five</h1>
+          <h5>Learn More</h5>
+          <a href="#" class="btn-customs">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Academic section  end -->
+
+
+
+<!-- 
+Achivements section start -->
+
+<div class="container mt-5">
+  <h1 style="font-weight: bold; color:dimgrey;">Our Achivements</h1>
+<hr style="width: 300px; border: 1px solid red;">
+  <!-- Marquee Section -->
+  <div class="marquee-container">
+    <!-- Image 1 -->
+    <div class="images-overlay">
+      <img src="gan1.jpg" style="height: 300px;" alt="Image 1">
+      <div class="overlays-text">
+        বিজয় ১
+        <br />
+        কিছু অতিরিক্ত লম্বা টেক্সট! <br>rrrrr<!-- Check for overflow -->
+      </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="images-overlay">
+      <img src="gan2.jpg" alt="Image 2">
+      <div class="overlays-text">বিজয় ২</div>
+    </div>
+    <!-- Image 2 -->
+    <div class="images-overlay">
+      <img src="gan4.jpg" alt="Image 2">
+      <div class="overlays-text">বিজয় ২</div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="images-overlay">
+      <img src="gan3.jpg" alt="Image 3">
+      <div class="overlays-text">বিজয় ৩</div>
+    </div>
+  </div>
+</div>
+
+  
+<!-- Achivements section start -->
+
+
+
+<!-- Guset Section start  -->
+
+<section class="guest-section py-5 reveal">
+  <div class="container text-cente"> 
+    <h1 class="mb-4" style="font-weight: bold; color:dimgrey;">অতিথি সেকশন</h1><hr style="width: 300px; border: 2px solid;">
+      <div class="row g-4">
+          <!-- প্রথম ছবি -->
+          <div class="col-md-6">
+              <div class="image-container">
+                  <img src="gust1.jpg" alt="অভিভাবক ১">
+                  <div class="overlay-text" style="font-weight: bold; font-size: 25px; color:
+                   white; background-color: green;">অতিথিবৃন্দ-০1</div>
+              </div>
+          </div>
+          <!-- প্রথম ছবি -->
+          <div class="col-md-6">
+              <div class="image-container">
+                  <img src="gust2.jpg" alt="অভিভাবক ১">
+                  <div class="overlay-text" style="font-weight: bold; font-size: 25px; color:
+                   white; background-color: green;">অতিথিবৃন্দ-০2</div>
+              </div>
+          </div>
+          <!-- প্রথম ছবি -->
+          <div class="col-md-6">
+              <div class="image-container">
+                  <img src="gust3.jpg" alt="অভিভাবক ১">
+                  <div class="overlay-text" style="font-weight: bold; font-size: 25px; color:
+                   white; background-color: green;">অতিথিবৃন্দ-০3</div>
+              </div>
+          </div>
+          <!-- দ্বিতীয় ছবি -->
+          <div class="col-md-6">
+              <div class="image-container">
+                  <img src="gust4.jpg" alt="অভিভাবক ২">
+                  <div class="overlay-text" style="font-weight: bold; font-size: 25px; color:
+                   white; background-color: green;">অতিথিবৃন্দ-০4</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Guset Section End -->
+
+
+<!-- Gardian comment Section start -->
+
+<div class="container my-5 reveal">
+  <h1 class="text-center mb-4" style="font-weight: bold; color:white; background-color: green; padding: 10px;">What Parents Says About Us</h1>
+
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img
+          src="gust1.jpg"
+          alt="Parent 1"
+          class="testimonial-img">
+        <p class="testimonial-text">
+          "We have seen remarkable growth in our child since they joined this school. The small class sizes and individualized attention have made a huge difference in their learning experience."
+        </p>
+        <p class="testimonial-name">- Parents 1</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img
+          src="gust2.jpg"
+          alt="Parent 2"
+          class="testimonial-img">
+        <p class="testimonial-text">
+          "The school provides an excellent environment for kids to learn and grow. Their unique approach to education ensures every child is valued."
+        </p>
+        <p class="testimonial-name">- Parents 2</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img
+          src="gust3.jpg"
+          alt="Parent 3"
+          class="testimonial-img">
+        <p class="testimonial-text">
+          "Our child has become more confident and socially active since joining this school. We couldn't be happier with the results!"
+        </p>
+        <p class="testimonial-name">- Parents 3</p>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#testimonialCarousel"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#testimonialCarousel"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- Gardian comment Section end -->
+
+
+<!-- footer area start -->
+
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase fw-bold text-shadow">আমাদের সম্পর্কে</h5>
+        <p class="text-shadow">আমাদের স্কুল শিশুদের মানসম্মত শিক্ষা প্রদান করে। আমরা শিক্ষার্থীদের সৃজনশীলতা এবং নৈতিক মূল্যবোধ গড়ে তুলতে প্রতিশ্রুতিবদ্ধ।</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase fw-bold text-shadow">দ্রুত লিঙ্ক</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none text-shadow">হোম</a></li>
+          <li><a href="#" class="text-white text-decoration-none text-shadow">আমাদের সম্পর্কে</a></li>
+          <li><a href="#" class="text-white text-decoration-none text-shadow">যোগাযোগ</a></li>
+          <li><a href="#" class="text-white text-decoration-none text-shadow">ভর্তি তথ্য</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase fw-bold text-shadow">যোগাযোগ</h5>
+        <p class="text-shadow">
+          ঠিকানা: প্রাইমারি স্কুল রোড, ঢাকা<br>
+          ফোন: +৮৮০১২৩৪৫৬৭৮৯<br>
+          ইমেইল: info@school.com
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="mb-0 text-shadow fw-bold">© ২০২৫ আমাদের স্কুল। সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+  </div>
+</footer>
+<!-- footer area start -->
+
+
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+ <script src="MahimVi.js">
+
+
+ </script>
+
+  </body>
+</html>  
