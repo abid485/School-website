@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অতিথি সেকশন</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .guest-section .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .guest-section .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+             /* Animation effect */
+        }
+        .guest-section .image-container:hover img {
+            transform: scale(1.1);
+             /* Zoom effect */
+        }
+        .guest-section .image-container .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="guest-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">অতিথি সেকশন</h2>
+            <div class="row g-4">
+
+
+                <!-- প্রথম ছবি -->
+                <div class="col sm-3 md-6 ">
+                    <div class="image-container">
+                        <img src="gan1.jpg" alt="অভিভাবক ১">
+                        <div class="overlay-text">অভিভাবক</div>
+                    </div>
+                </div>
+
+                <!-- প্রথম ছবি -->
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="pro2.jpg" alt="অভিভাবক ১">
+                        <div class="overlay-text">অভিভাবক</div>
+                    </div>
+                </div>
+
+                <!-- প্রথম ছবি -->
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="pro2.jpg" alt="অভিভাবক ১">
+                        <div class="overlay-text">অভিভাবক</div>
+                    </div>
+                </div>
+
+                <!-- দ্বিতীয় ছবি -->
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="pro2.jpg" alt="অভিভাবক ২">
+                        <div class="overlay-text">অভিভাবক</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- start practice -->
+
+<div class="parent" style="display: flex; justify-content: center; text-align: center;;">
+
+<div class="div1" style="padding: 20px;;">
+    <img src="gan2.jpg" style="width: 350px; height: 300px;" alt="">
+</div>
+
+
+<div class="div2" style=" border: 2px solid red; padding: 20px;">
+    <p style="text-align: center; margin-top: 150px;">Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. Eveniet, eum?</p>
+</div>
+</div>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
